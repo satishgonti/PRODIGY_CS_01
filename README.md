@@ -6,23 +6,19 @@ This Python script provides a simple menu-driven implementation of the Caesar ci
 ## overview
 The script contains functions for encrypting and decrypting text using the Caesar cipher, as well as a main function that provides a menu-driven interface for the user. The user can choose to encrypt text, decrypt text, or exit the program
 ## Functions
-encrypt(plaintext, n)
+    encrypt(plaintext, n)
 
 Encrypts the given plaintext using the Caesar cipher.
-
-plaintext: The text to be encrypted.
-
-n: The shift value for the Caesar cipher.
+* plaintext: The text to be encrypted.
+* n: The shift value for the Caesar cipher.
 
 The function iterates over each character in the plaintext, checks if it is a space, uppercase, or lowercase letter, and applies the appropriate encryption logic. Spaces remain unchanged.
 
-decrypt(plaintext, n)
+     decrypt(plaintext, n)
 
 Decrypts the given ciphertext using the Caesar cipher.
-
-plaintext: The text to be decrypted.
-
-n: The shift value that was used during encryption.
+* plaintext: The text to be decrypted.
+* n: The shift value that was used during encryption.
 
 The function iterates over each character in the ciphertext, checks if it is a space, uppercase, or lowercase letter, and applies the appropriate decryption logic. Spaces remain unchanged
 
@@ -31,7 +27,7 @@ The function iterates over each character in the ciphertext, checks if it is a s
 
 ## Main Function
 
-main()
+    main()
 
 The main function of the script provides a menu-driven interface to the user. It prompts the user to choose an action (encrypt, decrypt, or exit) and performs the corresponding operation.
 
@@ -49,9 +45,9 @@ Exit the program.
 
 ## Notes
 
-1. The shift value should be a positive integer.
-2. The script handles both uppercase and lowercase letters.
-3. Spaces are preserved in the encrypted and decrypted text.
+* The shift value should be a positive integer.
+* The script handles both uppercase and lowercase letters.
+* Spaces are preserved in the encrypted and decrypted text.
 
 ## Requirements
 Python 3.x
